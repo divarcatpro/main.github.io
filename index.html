@@ -3,7 +3,7 @@
   <head>
   	<title>Divarcat PRO - دیوارکت</title>
 	<link rel="icon" type="image/x-icon" href="DivarCatFav.png">
-	  <style>
+<!-- 	  <style>
 		  .loader {
 			  position: fixed;
 			  z-index: 99;
@@ -37,29 +37,33 @@
 			  position: absolute;
 			  margin-top: 156px;
 		  }
-	  </style>
+	  </style> -->
   </head>
 
   <body dir="rtl" style="
     height: 750px;
 ">
-   <div class="loader">
+<!--    <div class="loader">
       <img src="https://www.clipartmax.com/png/full/197-1970959_whf-logo-spinner-to-indicate-loading-transparent-loading-heart-gif.png" alt="Loading..." />
 	   <p class"load">منتظر بمانید ....</p>
    </div>
-   <embed type="text/html" src="https://script.google.com/macros/s/AKfycbyHBSp1LEUPP1qAgCk7E3SejuqkOSqKZ-4ihF-hhCwg75f9eHnHoC_RtnFbygxFKpr4JA/exec" width="100%" height="100%">
+   <embed type="text/html" src="https://script.google.com/macros/s/AKfycbyHBSp1LEUPP1qAgCk7E3SejuqkOSqKZ-4ihF-hhCwg75f9eHnHoC_RtnFbygxFKpr4JA/exec" width="100%" height="100%"> -->
   </body>
 	<script>
-		let $ = document
-		let loading = $.querySelector(".loader")
+		// let $ = document
+		// let loading = $.querySelector(".loader")
 
-		function loadHandler() {
-			setInterval(function (){
-			loading.classList.add("hidden")
-			},8000)
+		// function loadHandler() {
+		// 	setInterval(function (){
+		// 	loading.classList.add("hidden")
+		// 	},8000)
+		// }
+
+		// window.addEventListener("load",loadHandler)
+		document.onload(myFunction())
+		function myFunction() {
+		  location.replace("https://www.w3schools.com")
 		}
-
-		window.addEventListener("load",loadHandler)
 
 	</script>
 </html>
